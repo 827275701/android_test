@@ -8,10 +8,6 @@ class recv(object):
         self.msg = 'HTTP/1.1 200 OK\r\n\r\n'
         self.sock = sock
 
-    def test(self):
-        self.msg += 'hello world\r\n'
-        self.sock.send(self.msg.encode('utf-8'))
-        
     def login_yes(self):
         self.msg += 'yes\r\n'
         self.sock.send(self.msg.encode('utf-8'))
