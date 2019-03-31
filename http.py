@@ -31,8 +31,10 @@ while True:
     print(buf)
 
     m = test_recv.recv(clientsocket)
-    m.login_yes()
+    #m.login_yes()
     #m.login_no()
+    #m.login_other()
+    m.person_info()
     clientsocket.close()
 
 
